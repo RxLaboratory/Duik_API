@@ -21,6 +21,8 @@ ____
 ## Table of Contents
 
 - **Miscellaneous**
+    - [Introduction](introduction.md)
+    - [API Reference](reference/index.html)
     - [*Contact*](http://contact.rxlab.info)
     - [*Chat*](http://chat.rxlab.info)
     - [*Donate*](http://donate.rxlab.info)

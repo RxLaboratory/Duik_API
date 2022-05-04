@@ -31,6 +31,8 @@ site_dir: ../docs/
 dev_addr: '127.0.0.1:8001'
 nav:
     - v17.0.0-Alpha: index.md
+    - Introduction: introduction.md
+    - API Reference: reference/index.html
     - ...:
         #- Changelog: changelog.md
         #- Credits: credits.md
