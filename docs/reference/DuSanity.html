@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Class: DuSeparator</title>
+    <title>Namespace: DuSanity</title>
     
     
     <script src="scripts/prettify/prettify.js"></script>
@@ -5147,7 +5147,7 @@
     </ul>
 </div>
     <div class="main">
-        <h1 class="page-title" data-filename="DuSeparator.html">Class: DuSeparator</h1>
+        <h1 class="page-title" data-filename="DuSanity.html">Namespace: DuSanity</h1>
         
 
 
@@ -5156,10 +5156,8 @@
     
 <header>
     <h2>
-    DuSeparator
+    DuSanity
     </h2>
-    
-        <div class="class-description">For use with <a href="DuScriptUI.html"><code>DuScriptUI</code></a>.<br />A DuSeparator.<br />This is not a real class, and cannot be instanciated.<br />Use <a href="DuScriptUI.html#.separator"><code>DuScriptUI.separator</code></a> to create a DuSeparator.<br />The DuSeparator inherits the Group object from ScriptUI and has all of its properties and methods.</div>
     
 </header>  
 
@@ -5169,30 +5167,143 @@
     
     
         
-<dt>
-    <div class="nameContainer">
-        <h4 class="name" id="DuSeparator">
-            
-            new DuSeparator<span class="signature">()</span>
-        </h4>
+            <div class="description"><h3>Sanity tests for After Effects</h3><p>DuSan requires <i>DuAEF</i>, the <i>Duduf After Effects Framework</i>. Two builds of the <i>DuSan API</i> are available:<br /><ul><li><code>DuSan_api.jsxinc</code> does not include <i>DuAEF</i>, and can be used to compine multiple <i>Duduf APIs</i> with a single copy of <i>DuAEF</i>.<br />Be careful to grab the right version of <i>DuAEF</i> in this case.</li><li><code>DuAEF_DuSan_api.jsxinc</code> includes all dependencies, with <i>DuAEF</i>, and is easier to include in your scripts.</li></ul></p></div>
+        
+        
+        
+<dl class="details">
     
         
-        <div class="tag-source">
-            D:/RxLab/src/RxOT/DuAEF/Duik/Duik_API/DuAEF_Duik_api.jsxinc, line 10882
-        </div>
-        
-    </div>
+    
+    <dt class="tag-version">Version:</dt>
+    <dd class="tag-version"><ul class="dummy"><li>2.0.0-Dev</li></ul></dd>
+    
+    
+    
 
+    
+    
+    
+    <dt class="tag-author">Author:</dt>
+    <dd class="tag-author">
+        <ul>
+            <li>Nicolas Dufresne and contributors</li>
+        </ul>
+    </dd>
+    
+    
+    
+    <dt class="tag-copyright">Copyright:</dt>
+    <dd class="tag-copyright"><ul class="dummy"><li>2022 Nicolas Dufresne, RxLaboratory</li></ul></dd>
+    
+    
+    
+    <dt class="tag-license">License:</dt>
+    <dd class="tag-license"><ul class="dummy"><li>GPL-3.0 <br />DuSan is free software: you can redistribute it and/or modify<br />it under the terms of the GNU General Public License as published by<br />the Free Software Foundation, either version 3 of the License, or<br />(at your option) any later version.<br /><br />DuSan is distributed in the hope that it will be useful,<br />but WITHOUT ANY WARRANTY; without even the implied warranty of<br />MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the<br />GNU General Public License for more details.<br /><br />You should have received a copy of the GNU General Public License<br />along with DuSan. If not, see <a target="_blank" href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>.</li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+        
+        
+    
+    </div>
+    
+    
+    
+    
+    
+    
+        <h3 class="subsection-title">Requires</h3>
+        
+        <ul>
+            <li>module:DuAEF>=1.0.0</li>
+        </ul>
+    
+    
+    
+    
+    
+        <h3 class="subsection-title">Namespaces</h3>
+        
+        <dl>
+            <dt><a href="namespaces.html#DuSanity.Test"><a href="DuSanity.Test.html">Test</a></a></dt>
+            <dd></dd>
+        
+            <dt><a href="namespaces.html#DuSanity.UI"><a href="DuSanity.UI.html">UI</a></a></dt>
+            <dd></dd>
+        </dl>
+    
+    
+    
+        <h3 class="subsection-title">Members</h3>
+        
+        <dl>
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id=".currentLevel"><span class="type-signature static">static,readonly</span>DuSanity.currentLevel<span class="type-signature type dusanity.level"><a href="DuSanity.html#.Level">DuSanity.Level</a></span> </h4>
+    </div>
+    
     
 </dt>
 <dd>
     
+    <div class="description">
+        The current sanity level
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
     
 
     
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id=".Level"><span class="type-signature static">static,readonly</span>DuSanity.Level<span class="type-signature type int">int</span> </h4>
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        The sanity levels.
+    </div>
     
     
     
@@ -5215,6 +5326,8 @@
 		
 		
 		
+		<th>Default</th>
+		
 		
 		<th class="last">Description</th>
 	</tr>
@@ -5225,16 +5338,13 @@
 	
         <tr>
             
-                <td class="name"><code>label</code></td>
+                <td class="name"><code>UNKNOWN</code></td>
             
             
             <td class="type">
             
                 
-<span class="param-type">StaticText</span>
-|
-
-<span class="param-type">CheckBox</span>
+<span class="param-type">int</span>
 
 
             
@@ -5243,21 +5353,27 @@
             
             
             
+                <td class="default">
+                
+                    -1
+                
+                </td>
             
-            <td class="description last">the label</td>
+            
+            <td class="description last"></td>
         </tr>
 	
 	
 	
         <tr>
             
-                <td class="name"><code>checkable</code></td>
+                <td class="name"><code>OK</code></td>
             
             
             <td class="type">
             
                 
-<span class="param-type">boolean</span>
+<span class="param-type">int</span>
 
 
             
@@ -5266,14 +5382,377 @@
             
             
             
+                <td class="default">
+                
+                    0
+                
+                </td>
             
-            <td class="description last">Read-Only | true if a checkbox is displayed</td>
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>INFO</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">int</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+                <td class="default">
+                
+                    1
+                
+                </td>
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>WARNING</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">int</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+                <td class="default">
+                
+                    2
+                
+                </td>
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>DANGER</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">int</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+                <td class="default">
+                
+                    3
+                
+                </td>
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>CRITICAL</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">int</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+                <td class="default">
+                
+                    4
+                
+                </td>
+            
+            
+            <td class="description last"></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>FATAL</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">int</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+                <td class="default">
+                
+                    5
+                
+                </td>
+            
+            
+            <td class="description last"></td>
         </tr>
 	
 	
 	</tbody>
 </table></dl>
         
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+</dd>
+
+        </dl>
+    
+    
+    
+        <h3 class="subsection-title">Methods</h3>
+        
+        <dl>
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id=".fix">
+            
+            <span class="type-signature static">static</span>DuSanity.fix<span class="signature">(test)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{<a href="DuSanity.html#.Level">DuSanity.Level</a>}</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            D:/RxLab/src/RxOT/DuAEF/Duik/Duik_API/DuAEF_Duik_api.jsxinc, line 30616
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        Fixes the issues for the given test, if possible
+    </div>
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>test</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="DuSanity.Test.html">DuSanity.Test</a></span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                The test to fix</td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        <a href="DuSanity.html#.Level">DuSanity.Level</a>
+                        
+                    
+            </td>
+            <td class="description last">The level after the fix</td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id=".init">
+            
+            <span class="type-signature static">static</span>DuSanity.init<span class="signature">()</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            D:/RxLab/src/RxOT/DuAEF/Duik/Duik_API/DuAEF_Duik_api.jsxinc, line 31941
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        This function must be called once when everything in the script is ready and after <a href="DuAEF.html#.init"><code>DuAEF.init</code></a>
+    </div>
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
     
         
     
@@ -5311,9 +5790,91 @@
     
 </dd>
 
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id=".isEnabled">
+            
+            <span class="type-signature static">static</span>DuSanity.isEnabled<span class="signature">(test)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{boolean}</span>
+        </h4>
     
+        
+        <div class="tag-source">
+            D:/RxLab/src/RxOT/DuAEF/Duik/Duik_API/DuAEF_Duik_api.jsxinc, line 30695
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        Checks if a Sanity Test is enabled
     </div>
     
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>test</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="DuSanity.Test.html">DuSanity.Test</a></span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                The test</td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
     
     
     
@@ -5326,6 +5887,1557 @@
     
     
     
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        boolean
+                        
+                    
+            </td>
+            <td class="description last"></td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id=".isGloballyEnabled">
+            
+            <span class="type-signature static">static</span>DuSanity.isGloballyEnabled<span class="signature">(test)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{boolean}</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            D:/RxLab/src/RxOT/DuAEF/Duik/Duik_API/DuAEF_Duik_api.jsxinc, line 30673
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        Checks if the fiven test is globally enabled
+    </div>
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>test</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="DuSanity.Test.html">DuSanity.Test</a></span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                The test</td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        boolean
+                        
+                    
+            </td>
+            <td class="description last">True if the test is enabled</td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id=".isLiveFixEnabled">
+            
+            <span class="type-signature static">static</span>DuSanity.isLiveFixEnabled<span class="signature">(test)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{boolean}</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            D:/RxLab/src/RxOT/DuAEF/Duik/Duik_API/DuAEF_Duik_api.jsxinc, line 30627
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        Checks if the the live fix is enabled for the given test
+    </div>
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>test</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="DuSanity.Test.html">DuSanity.Test</a></span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                The test</td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        boolean
+                        
+                    
+            </td>
+            <td class="description last">True if the test live fix is enabled</td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id=".isProjectEnabled">
+            
+            <span class="type-signature static">static</span>DuSanity.isProjectEnabled<span class="signature">(test)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{boolean}</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            D:/RxLab/src/RxOT/DuAEF/Duik/Duik_API/DuAEF_Duik_api.jsxinc, line 30660
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        Checks if the fiven test is enabled for the current project
+    </div>
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>test</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="DuSanity.Test.html">DuSanity.Test</a></span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                The test</td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        boolean
+                        
+                    
+            </td>
+            <td class="description last">True if the test is enabled for the current project</td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id=".needsFix">
+            
+            <span class="type-signature static">static</span>DuSanity.needsFix<span class="signature">(test)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{boolean}</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            D:/RxLab/src/RxOT/DuAEF/Duik/Duik_API/DuAEF_Duik_api.jsxinc, line 30649
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        Checks if the fiven test needs a fix
+    </div>
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>test</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="DuSanity.Test.html">DuSanity.Test</a></span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                The test to fix</td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        boolean
+                        
+                    
+            </td>
+            <td class="description last">True if the test needs a fix</td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id=".run">
+            
+            <span class="type-signature static">static</span>DuSanity.run<span class="signature">(<span class="optional">force</span>)</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            D:/RxLab/src/RxOT/DuAEF/Duik/Duik_API/DuAEF_Duik_api.jsxinc, line 31910
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        Runs all sanity tests
+    </div>
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Default</th>
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>force</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    false
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                Force running all tests even if they've not timed out yet.</td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id=".setEnabled">
+            
+            <span class="type-signature static">static</span>DuSanity.setEnabled<span class="signature">(test, <span class="optional">enabled</span>)</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            D:/RxLab/src/RxOT/DuAEF/Duik/Duik_API/DuAEF_Duik_api.jsxinc, line 30717
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        Enables or disables the test
+    </div>
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Default</th>
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>test</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="DuSanity.Test.html">DuSanity.Test</a></span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                    
+                        
+                    
+                
+                The test</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>enabled</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    true
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                </td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id=".setGloballyEnabled">
+            
+            <span class="type-signature static">static</span>DuSanity.setGloballyEnabled<span class="signature">(test, <span class="optional">enabled</span>)</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            D:/RxLab/src/RxOT/DuAEF/Duik/Duik_API/DuAEF_Duik_api.jsxinc, line 30684
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        Globally enables or disables the test
+    </div>
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Default</th>
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>test</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="DuSanity.Test.html">DuSanity.Test</a></span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                    
+                        
+                    
+                
+                The test</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>enabled</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    true
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                </td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id=".setLiveFixEnabled">
+            
+            <span class="type-signature static">static</span>DuSanity.setLiveFixEnabled<span class="signature">(test, <span class="optional">enabled</span>)</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            D:/RxLab/src/RxOT/DuAEF/Duik/Duik_API/DuAEF_Duik_api.jsxinc, line 30638
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        Enables or disables the live fix for the given test
+    </div>
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Default</th>
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>test</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="DuSanity.Test.html">DuSanity.Test</a></span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                    
+                        
+                    
+                
+                The test</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>enabled</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    true
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                </td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id=".setProjectEnabled">
+            
+            <span class="type-signature static">static</span>DuSanity.setProjectEnabled<span class="signature">(test, <span class="optional">enabled</span>)</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            D:/RxLab/src/RxOT/DuAEF/Duik/Duik_API/DuAEF_Duik_api.jsxinc, line 30742
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        Enables or disables the test for the current project only
+    </div>
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Default</th>
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>test</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="DuSanity.Test.html">DuSanity.Test</a></span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                    
+                        
+                    
+                
+                The test</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>enabled</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    true
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                </td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id=".setTimeOut">
+            
+            <span class="type-signature static">static</span>DuSanity.setTimeOut<span class="signature">(test, timeOut)</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            D:/RxLab/src/RxOT/DuAEF/Duik/Duik_API/DuAEF_Duik_api.jsxinc, line 30756
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        Sets the timeout for the test
+    </div>
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>test</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="DuSanity.Test.html">DuSanity.Test</a></span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                The test</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>timeOut</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">int</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                The time out in milliseconds.</td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        </dl>
     
     
     

@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Namespace: DuAEPuppet</title>
+    <title>Namespace: UI</title>
     
     
     <script src="scripts/prettify/prettify.js"></script>
@@ -5147,7 +5147,7 @@
     </ul>
 </div>
     <div class="main">
-        <h1 class="page-title" data-filename="DuAEPuppet.html">Namespace: DuAEPuppet</h1>
+        <h1 class="page-title" data-filename="DuSanity.UI.html">Namespace: UI</h1>
         
 
 
@@ -5156,7 +5156,9 @@
     
 <header>
     <h2>
-    DuAEPuppet
+        <span class="ancestors"><a href="DuSanity.html">DuSanity</a>.</span>
+    
+    UI
     </h2>
     
 </header>  
@@ -5167,7 +5169,7 @@
     
     
         
-            <div class="description">Puppet tool methods</div>
+            <div class="description">UI tools to show sanity levels and settings</div>
         
         
         
@@ -5219,14 +5221,14 @@
             
 <dt>
     <div class="nameContainer">
-        <h4 class="name" id=".riggable">
+        <h4 class="name" id=".button">
             
-            <span class="type-signature static">static</span>DuAEPuppet.riggable<span class="signature">(pin)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{boolean}</span>
+            <span class="type-signature static">static</span>DuSanity.UI.button<span class="signature">(container, <span class="optional">addLabel</span>, <span class="optional">autoUpdate</span>)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{<a href="DuButton.html">DuButton</a>}</span>
         </h4>
     
         
         <div class="tag-source">
-            D:/RxLab/src/RxOT/DuAEF/Duik/Duik_API/DuAEF_Duik_api.jsxinc, line 28515
+            D:/RxLab/src/RxOT/DuAEF/Duik/Duik_API/DuAEF_Duik_api.jsxinc, line 31654
         </div>
         
     </div>
@@ -5237,7 +5239,7 @@
     
     
     <div class="description">
-        Checks if a pin can be rigged or not.\nFor now, the only pins which can not be rigged are starch pins.
+        Creates a button to show the current sanity level
     </div>
     
 
@@ -5258,6 +5260,8 @@
 		<th>Type</th>
 		
 		
+		<th>Default</th>
+		
 		
 		<th class="last">Description</th>
 	</tr>
@@ -5268,23 +5272,104 @@
 	
         <tr>
             
-                <td class="name"><code>pin</code></td>
+                <td class="name"><code>container</code></td>
             
             
             <td class="type">
             
                 
-<span class="param-type">PropertyGroup</span>
+<span class="param-type">Group</span>
 
 
             
             </td>
             
             
+                <td class="default">
+                
+                </td>
+            
             
             <td class="description last">
                 
-                The pin to test</td>
+                    
+                    
+                        
+                    
+                
+                A ScriptUI group where to add the button</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>addLabel</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    true
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                Adds a label next to the icon</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>autoUpdate</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    true
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                If true, the button will be automatically updated according to the current sanity level. Otherwise, call setLevel to change the level.</td>
         </tr>
 	
 	
@@ -5345,11 +5430,552 @@
             
             <td class="type">
             
-                        boolean
+                        <a href="DuButton.html">DuButton</a>
                         
                     
             </td>
-            <td class="description last">True if this pin has either a position, rotation or scale property</td>
+            <td class="description last">The DuButton</td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id=".icon">
+            
+            <span class="type-signature static">static</span>DuSanity.UI.icon<span class="signature">(container, <span class="optional">addLabel</span>, <span class="optional">autoUpdate</span>)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{Group}</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            D:/RxLab/src/RxOT/DuAEF/Duik/Duik_API/DuAEF_Duik_api.jsxinc, line 31554
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        Creates an icon to show the current sanity level
+    </div>
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Default</th>
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>container</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Group</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                    
+                        
+                    
+                
+                A ScriptUI group where to add the icon</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>addLabel</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    true
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                Adds a label next to the icon</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>autoUpdate</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    true
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional">optional</span>
+                    
+                    
+                        
+                    
+                
+                If true, the icon will be automatically updated according to the current sanity level. Otherwise, call setLevel to change the level.</td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        Group
+                        
+                    
+            </td>
+            <td class="description last">The ScriptUI Group containing the icon and its label</td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id=".panel">
+            
+            <span class="type-signature static">static</span>DuSanity.UI.panel<span class="signature">(container)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{Group}</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            D:/RxLab/src/RxOT/DuAEF/Duik/Duik_API/DuAEF_Duik_api.jsxinc, line 31721
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        Creates a panel showing all tests and current status
+    </div>
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>container</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Group</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                The ScriptUI Group containing the DuSanity panel</td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        Group
+                        
+                    
+            </td>
+            <td class="description last">The panel</td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id=".test">
+            
+            <span class="type-signature static">static</span>DuSanity.UI.test<span class="signature">(container, test)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{Group}</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            D:/RxLab/src/RxOT/DuAEF/Duik/Duik_API/DuAEF_Duik_api.jsxinc, line 31746
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        Adds the UI to display a test in the UI
+    </div>
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>container</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Group</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                A ScriptUI group where to add the test report</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>test</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="DuSanity.Test.html">DuSanity.Test</a></span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                The test to show</td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        Group
+                        
+                    
+            </td>
+            <td class="description last">The ScriptUI Group containing the test report</td>
         </tr>
     
     </tbody>
