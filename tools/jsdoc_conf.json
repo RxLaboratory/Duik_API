@@ -23,7 +23,7 @@
             "name": "Duik API Reference",
             "logo": "",
             "title": "",
-            "css": "",
+            "css": "jsdoc.css",
             "hideGenerator": false,
             "navLinks": [
                 {
